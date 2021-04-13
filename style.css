@@ -1,0 +1,191 @@
+body {
+    
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.hlavicka {
+    width: 100%;
+    text-align: center;
+}
+
+
+.hlavicka__motto {
+    font-family: 'BioRhyme', serif;
+    font-size: 50px;
+    margin: 10px;
+}
+
+.hlavicka__motto--barva {
+    color: rgb(226, 147, 43);
+}
+
+.hlavicka__jmeno {
+    font-size: 20px;
+}
+
+.uvod {
+    width: 100%;
+    margin: 30px 0 10px 0;
+}
+
+.uvod-pozadi {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url('images/hv_web.jpg');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.uvod__text {
+    padding: 7%;
+    margin: 0;
+}
+
+.uvod__text--nadpis {
+    color: white;
+
+}
+
+.uvod__text--barva {
+    color: rgb(226, 147, 43);
+    text-shadow: 1px 1px 1px black 
+}
+
+.uvod__text--text {
+    color: white;
+}
+
+.neco-o-mne {
+    width: 100%;
+    text-align: center;  
+}
+
+.neco-o-mne__nadpis {
+    text-align: left;
+    padding: 0 7%;
+}
+
+.neco-o-mne__nadpis--barva {
+    color: rgb(226, 147, 43);
+}
+
+.neco-o-mne__foto {
+    max-width: 60%;
+    height: auto;
+    border-radius: 50%; 
+}
+
+.neco-o-mne__text {
+    text-align: left;
+    padding: 0 7%;
+}
+
+.kontakt {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    margin: 30px 0 0 0;
+    padding: 5px 0 30px 0;
+    line-height: 2;
+}
+
+.kontakt__nadpis {
+    color: rgb(226, 147, 43);
+    padding: 0 7%;
+}
+
+.kontakt__udaje {
+    padding: 0 7%;
+    color: white;
+}
+
+.kontakt__udaje--barva {
+    color:  rgb(226, 147, 43);
+}
+
+.kontakt__udaje--pismo {
+    text-transform: uppercase;
+}
+
+.blog {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    
+}
+
+.blog__nadpis {
+    padding: 0 7%;
+    text-align: left;
+}
+
+.blog__nadpis--barva {
+    color: rgb(226, 147, 43);
+}
+
+.clanek-jedna {
+    text-align: center;
+    max-width: 400px;
+    height: 100px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(images/blog1.jpg);
+    margin: 10px 0 ; 
+}
+
+.clanek-dva {
+    text-align: center;
+    max-width: 400px;
+    height: 100px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(images/blog2.jpg); 
+}
+
+.blog__titulek {
+    text-decoration: none; 
+}
+
+.blog__titulek--velky {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.blog__titulek--bily {
+    color: white;
+}
+
+.paticka {
+    width: 100%;
+    background-color:rgb(226, 147, 43);
+    text-align: center;
+}
+
+.paticka-jmeno {
+    font-size: 20px;
+    font-family: 'BioRhyme', serif;
+    color: white;
+    padding: 20px;
+}
+
+.paticka-jmeno--barva {
+    color: black;
+}
+
+.paticka__identifikace {
+    color: white;
+    padding: 0 0 15px 0;
+}
+
+
+
+
+
+
+
+
+    
+
+
+
+
