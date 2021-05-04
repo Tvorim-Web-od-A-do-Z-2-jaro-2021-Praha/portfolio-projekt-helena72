@@ -13,69 +13,84 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header class="hlavicka">
 
-        <img class="hlavicka__logo" src="images/logo_cviceni.jpg" alt="logo">
+    <div class="container">
+        <header class="hlavicka">
 
-        <h1 class="hlavicka__motto">
-            <span class="hlavicka__motto--barva">Tvořím weby,</span>
-            které zaujmou.</h1>
-        </h1>
-        
-        <span class="hlavicka__jmeno">--Helena Vinická--</span> 
+            <img class="hlavicka__logo" src="images/logo_cviceni.jpg" alt="logo">
 
-    </header>
+            <div class="hlavicka-main">
+                <h1 class="hlavicka-main__motto">
+                    <span class="hlavicka-main__motto--barva">Tvořím weby,</span>
+                    které zaujmou.</h1>
+                </h1>
+                
+                <span class="hlavicka-main__jmeno">--Helena Vinická--</span> 
+            </div>
+        </header>
 
-    <section class="uvod uvod__pozadi">
-        <div class="uvod__text">
-            <h2 class="uvod__text--nadpis">
-                <span class="uvod__text--barva">Jsem webdesignérka</span> 
-                <br>a baví mě to
-            </h2>
+        <section class="uvod uvod__pozadi">
+            <div class="uvod__text">
+                <h2 class="uvod__text--nadpis">
+                    <span class="uvod__text--barva">Jsem webdesignérka</span> 
+                    <br>a baví mě to
+                </h2>
 
-            <p class="uvod__text--text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, repudiandae architecto. A, commodi omnis. Quidem quam, harum ipsum veniam exercitationem et! Harum, et eos amet porro magni officia eaque excepturi dolores doloribus maiores vero, quia voluptatibus, unde odio alias! Aliquam iste quibusdam vel eveniet sint, voluptatibus, ullam libero natus cumque voluptatum aut modi dolore aspernatur doloremque tenetur a quam at dolor suscipit veniam fuga. Error nihil quidem reiciendis velit porro.</p>
-        </div>
-    </section>
+                <p class="uvod__text--text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, repudiandae architecto. A, commodi omnis. Quidem quam, harum ipsum veniam exercitationem et! Harum, et eos amet porro magni officia eaque excepturi dolores doloribus maiores vero, quia voluptatibus, unde odio alias! Aliquam iste quibusdam vel eveniet sint, voluptatibus, ullam libero natus cumque voluptatum aut modi dolore aspernatur doloremque tenetur a quam at dolor suscipit veniam fuga. Error nihil quidem reiciendis velit porro.</p>
+            </div>
+        </section>
 
-  
-    <section class="neco-o-mne">
-        <h2 class="neco-o-mne__nadpis">Něco o 
-            <span class="neco-o-mne__nadpis--barva">mně</span></h2>
-        <img class="neco-o-mne__foto" src="images/HV_portret.jpg" alt="foto Helena V">
-        <p class="neco-o-mne__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vitae totam exercitationem repellendus perferendis laboriosam aperiam tempora. Dolorum, accusantium.  </p>
-        <p class="neco-o-mne__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ea, laudantium odit in a aut ratione sapiente aliquam? Est neque soluta deleniti similique eligendi dolorum assumenda, sit numquam sequi doloribus laboriosam aliquid, enim fugiat corrupti ad, error quae a modi?</p>
+    
+        <section class="neco-o-mne">
+            <h2 class="neco-o-mne__nadpis">Něco o 
+                <span class="neco-o-mne__nadpis--barva">mně</span></h2>
+            <img class="neco-o-mne__foto" src="images/HV_portret.jpg" alt="foto Helena V">
+            <p class="neco-o-mne__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vitae totam exercitationem repellendus perferendis laboriosam aperiam tempora. Dolorum, accusantium.  </p>
+            <p class="neco-o-mne__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ea, laudantium odit in a aut ratione sapiente aliquam? Est neque soluta deleniti similique eligendi dolorum assumenda, sit numquam sequi doloribus laboriosam aliquid, enim fugiat corrupti ad, error quae a modi?</p>
 
-    </section>
+        </section>
 
-   
+    
 
-    <section class="kontakt">
-        <h2 class="kontakt__nadpis">Kontakt</h2>
-        <div class="kontakt__udaje"> <span class="kontakt__udaje--barva kontakt__udaje--pismo">Email:</span> vini.hele@seznam.cz
-            <br> <span class="kontakt__udaje--barva kontakt__udaje--pismo">Telefon:</span>  +420 111 222 333
-            <br> <span class="kontakt__udaje--barva kontakt__udaje--pismo">Studio:</span>  Ondráčkova 53, 628 00  Brno
-        </div>
-    </section>
+        <section class="kontakt">
+            <h2 class="kontakt__nadpis">Kontakt</h2>
+            <div class="kontakt__udaje">
+                <div class="email"> 
+                    <span class="kontakt__udaje--barva kontakt__udaje--pismo">Email:</span> vini.hele@seznam.cz
+                </div>
 
-    <section class="blog">
-        <h2 class="blog__nadpis"> <span class="blog__nadpis--barva">Poslední</span> články
-            <br> z blogu</h2>
+                <div class="telefon">
+                    <span class="kontakt__udaje--barva kontakt__udaje--pismo">Telefon:</span>  +420 111 222 333
+                </div>
 
-        <div class="blog clanek-jedna"> 
-            <a class="blog__titulek blog__titulek--velky blog__titulek--bily" href="">Barvy webu 2021</a>
-        </div> 
-        
-        <div class="blog clanek-dva">
-            <a class="blog__titulek blog__titulek--velky blog__titulek--bily " href="">Co nového v html</a>   
-        </div>
+                <div class="studio">
+                    <span class="kontakt__udaje--barva kontakt__udaje--pismo">Studio:</span>  Ondráčkova 53, 628 00  Brno
+                </div>
+            </div>
+        </section>
 
-    </section>
+        <section class="blog">
+            <h2 class="blog__nadpis"> <span class="blog__nadpis--barva">Poslední</span> články z blogu</h2>
 
-    <footer class="paticka">
-        <div class="paticka-jmeno">Helena <span class="paticka-jmeno--barva">Vinická</span></div>
-        <div class="paticka__identifikace">IČ:12345678 / DIČ: CZ12345678</div> 
-    </footer>
+            <div class="blog clanek-jedna">
+                <a class="blog__titulek blog__titulek--velky blog__titulek--bily" href="">Barvy webu 2021</a>
+            </div> 
+            
+            <div class="blog clanek-dva">
+                <a class="blog__titulek blog__titulek--velky blog__titulek--bily " href="">Co nového v html</a>   
+            </div>
 
+        </section>
+
+        <footer class="paticka">
+            <div class="logojmeno">
+                <img class="paticka__logo" src="images/logo_bile_cviceni.png" alt="logo bile">
+                <div class="paticka-jmeno">Helena <span class="paticka-jmeno--barva">Vinická</span></div>
+            </div>
+            <div class="paticka__identifikace">IČ:12345678 / DIČ: CZ12345678</div> 
+        </footer>
+    
+    </div>
     
 
 
