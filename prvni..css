@@ -1,0 +1,445 @@
+body {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+
+.hlavicka {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5%
+       
+}
+
+.paticka__logo {
+    display: none;
+}
+
+.hlavicka-main {
+    flex: 0 1 100%;
+    text-align: center;
+}
+
+
+.hlavicka-main__motto {
+    font-family: 'BioRhyme', serif;
+    font-size: 50px;
+    margin: 10px;
+    
+}
+
+.hlavicka-main__motto--barva {
+    color: rgb(226, 147, 43);
+}
+
+.hlavicka-main__jmeno {
+    font-size: 20px;
+}
+
+.uvod {
+    width: 100%;
+    
+}
+
+.uvod__pozadi {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url('images/hv_web.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.uvod__text {
+    padding: 7%;
+    margin: 0;
+}
+
+.uvod__text--nadpis {
+    color: white;
+
+}
+
+.uvod__text--barva {
+    color: rgb(226, 147, 43);
+    text-shadow: 1px 1px 1px black 
+}
+
+.uvod__text--text {
+    color: white;
+}
+
+.neco-o-mne {
+    width: 100%;
+    text-align: center; 
+   
+}
+
+.neco-o-mne__nadpis {
+    text-align: left;
+    padding: 0 7%;
+}
+
+.neco-o-mne__nadpis--barva {
+    color: rgb(226, 147, 43);
+}
+
+.neco-o-mne__foto {
+    max-width: 50%;
+    height: auto;
+    border-radius: 50%; 
+}
+
+.neco-o-mne__text {
+    text-align: left;
+    padding: 0 7%;
+}
+
+.kontakt {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding: 5px 0 30px 0;
+    
+    
+}
+
+.kontakt__nadpis {
+    color: rgb(226, 147, 43);
+    padding: 0 7%;
+    text-align: left;
+}
+
+.kontakt__udaje {
+    padding: 0 7%;
+    color: white;
+    line-height: 2;
+}
+
+.kontakt__udaje--barva {
+    color:  rgb(226, 147, 43);
+}
+
+.kontakt__udaje--pismo {
+    text-transform: uppercase;
+}
+
+.blog {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.blog__nadpis {
+    padding: 0 7%;
+    text-align: left;
+    flex-basis: 100%;
+    
+}
+
+.blog__nadpis--barva {
+    color: rgb(226, 147, 43);
+}
+
+.clanek-jedna {
+    text-align: center;
+    max-width: 400px;
+    height: 100px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(images/blog1.jpg);
+    margin: 10px 0;  
+
+}
+
+.clanek-dva {
+    text-align: center;
+    max-width: 400px;
+    height: 100px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(images/blog2.jpg); 
+    margin: 0 0 10px 0;
+}
+
+.blog__titulek {
+    text-decoration: none;
+    padding: 1rem; 
+}
+
+.blog__titulek--velky {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.blog__titulek--bily {
+    color: white;
+}
+
+.paticka {
+    width: 100%;
+    background-color:rgb(226, 147, 43);
+    text-align: center;
+    
+}
+
+.paticka-jmeno {
+    font-size: 20px;
+    font-family: 'BioRhyme', serif;
+    color: white;
+    padding: 20px 0;
+}
+
+.paticka-jmeno--barva {
+    color: black;
+}
+
+.paticka__identifikace {
+    color: white;
+    padding: 0 0 15px 0;
+}
+
+@media screen and (min-width: 600px) {
+    .neco-o-mne {
+        text-align: left;
+        min-height: 15rem;
+    }
+    .neco-o-mne__foto {
+        width: auto;
+        max-height: 9rem;
+        margin: 0 1rem 10px 7%;
+        float: left; 
+    }
+
+    .blog {
+        justify-content: space-evenly; 
+        margin-bottom: 10px;   
+    }
+    .clanek-jedna {
+        flex: 0 1 40%; 
+    }
+    
+    .clanek-dva {
+        flex: 0 1 40%;
+        margin: 10px 0;
+    }
+    
+}
+
+@media screen and (min-width: 900px) {
+    .hlavicka {
+        flex-wrap: nowrap;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hlavicka__logo {
+        flex: 0 1 50%;
+        max-width: 300px;
+    }
+
+    .hlavicka-main {
+        flex: 0 1 50%;
+    }
+
+    .uvod__text {
+        position: relative;
+        left: 45%;
+        width: 40%;
+        
+    }
+
+    .kontakt__udaje {
+        text-align: right;
+    }
+
+
+    .blog {
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 7% 10px 7%;
+        flex-wrap: nowrap;
+        width: auto;
+    }
+
+    .blog__nadpis {
+        padding: 0;
+        flex: 1 0 20%;
+    }
+
+    .clanek-jedna {
+        flex: 1 0 20%;
+    }
+
+    .clanek-dva {
+        flex: 1 0 20%;
+    }
+
+    .paticka {
+        width: auto;
+        text-align: right;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logojmeno {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 7%;
+        
+    }
+
+
+    .paticka__identifikace {
+        padding: 0;
+        margin-right: 7%;
+    }
+
+    .paticka__logo {
+        display: block;
+        max-width: 80px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        display: grid;
+        grid-template-columns: 30% 1fr;
+        grid-template-rows: auto 300px 300px 150px 100px;
+        grid-template-areas: 
+            "uvod uvod"
+            "hlavicka omne"
+            "hlavicka blog"
+            "kontakt kontakt"
+            "paticka paticka";
+        justify-content: center;
+        align-content: stretch;
+    }
+
+    .uvod { grid-area: uvod;}
+    .hlavicka {grid-area: hlavicka;}
+    .neco-o-mne {grid-area: omne;}
+    .kontakt {grid-area: kontakt;}
+    .blog {grid-area: blog;}
+    .paticka {grid-area: paticka;}
+
+    .hlavicka {
+        display: block;
+        text-align: center;
+        justify-self: center;
+        padding: 50px 0;
+        margin: 0;
+        border-right: 1px solid rgb(226, 147, 43);
+        box-shadow: 10px 2px 10px rgb(240, 239, 237) ;
+    }
+
+    .neco-o-mne {
+        width: auto;
+        
+    }
+
+    .kontakt {
+        width: auto;
+        padding: 0;
+    }
+
+    .kontakt__udaje {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .blog {
+        flex-wrap: wrap;
+        margin: 0 7% 20px 7%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blog__nadpis {
+        flex-basis: 100%;
+        
+    }
+
+    .clanek-jedna {
+        margin: 0 10px 0 0;
+        height: 150px;
+        flex-basis: 40%;
+        
+    }
+
+    .clanek-dva {
+        margin: 0 10px;
+        height: 150px;
+        flex-basis: 40%;
+    }
+
+}
+
+@media screen and (min-width: 1500px) {
+    .container {
+        grid-template-columns: 35% 1fr;
+        grid-template-rows: repeat(5, minmax(100px, auto));
+        grid-template-areas: 
+            "hlavicka uvod"
+            "hlavicka omne"
+            "hlavicka blog"
+            "kontakt kontakt"
+            "paticka paticka";
+        
+    }
+
+    
+    .hlavicka-main__motto {
+        font-size: 100px;
+        margin: 60px 10px 0 10px;
+    }
+    .hlavicka__logo {
+        width: 500px;
+    }
+
+    .neco-o-mne {
+        margin-top: 30px;
+    }
+
+    .neco-o-mne__foto {
+        max-height: 15rem;
+        margin-right: 7%;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .kontakt__udaje {
+        font-size: 20px;
+    }
+
+    .blog {
+        margin-bottom: 30px;
+    }
+
+    .paticka {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
