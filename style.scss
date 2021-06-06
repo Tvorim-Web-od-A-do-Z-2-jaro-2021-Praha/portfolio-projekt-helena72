@@ -2,8 +2,10 @@ $mainColor:#e2932b;
 $secondColor: #000000;
 $textColor1: #ffffff;
 $textColor2: #000000;
-$mainPadding: 0 7%;
+
+$mainPadding: 0 2% 0 7%;
 $mainWidth: 100%;
+
 $fontMain: 'Roboto Slab', serif;
 $fontLogo: 'BioRhyme', serif;
 $sizeMedium: 30px;
@@ -32,10 +34,31 @@ body {
 
 .hlavicka {
     @include flexCenter();                          /*mixin*/
-    /*display: flex;*/
     flex-wrap: wrap;
-    /*justify-content: center;*/
     margin: 5%   
+}
+
+/***************animace loga*************************/
+svg {
+    cursor: pointer;
+}
+
+#hlavicka_logo:hover /* #logo-circle */ {
+    animation: squeeze .2s ease forwards; 
+    
+}
+
+#logo-circle {
+    transform-origin: center;
+    
+}
+
+@keyframes squeeze {
+    to {
+        transform: rotateX(90deg);
+    }
+    
+
 }
 
 .paticka__logo {
@@ -71,7 +94,50 @@ body {
     url('images/hv_web.jpg');
     background-position: center;
     background-size: cover;
+    position: relative;
 }
+
+#sun {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    left: 70%;
+    top: 2%; 
+
+}
+
+#sun-ellipse {
+    transition: all ease 2s;
+    transform-origin: center;
+}
+
+:hover #sun-ellipse {
+    stroke-width: 2;
+    stroke-dasharray: 8;
+    transform: scale(1.2);
+    fill: yellow;
+}
+
+.sun-face {
+    transition: all ease 2s;
+}
+
+:hover .sun-face {
+    stroke: blue;
+}
+
+.sun-paprsek {
+    transition: all ease 4s;
+}
+
+:hover .sun-paprsek {
+    stroke: yellow;
+    stroke-width: 5;
+}
+
+
+
+
 
 .uvod__text {
     padding: 7%;
@@ -133,6 +199,15 @@ body {
     text-align: left;
 }
 
+.svg-icon {
+    stroke: white;
+    width: 30px;
+}
+
+.kontakt-nadpisicon {
+    display: flex;
+}
+
 .kontakt__udaje {
     padding: $mainPadding;
     color:$textColor1;
@@ -151,8 +226,6 @@ body {
     width: $mainWidth;
     text-align: center;
     background-color: white;
-    /*display: flex;
-    justify-content: center;*/
     @include flexCenter();                       /*mixin*/
     flex-wrap: wrap;
         a { 
@@ -232,7 +305,7 @@ body {
     .neco-o-mne__foto {
         width: auto;
         max-height: 9rem;
-        margin: 0 1rem 10px 7%;
+        margin: 0 1rem 1rem 4rem;
         float: left; 
     }
 
@@ -259,7 +332,7 @@ body {
         align-items: center;
     }
 
-    .hlavicka__logo {
+    #hlavicka__logo {
         flex: 0 1 50%;
         max-width: 300px;
     }
@@ -275,6 +348,14 @@ body {
         
     }
 
+    #sun {
+        width: 150px;
+        height: 100px;
+        position: absolute;
+        left: 85%;
+        top: 5%; 
+    }
+
     .kontakt__udaje {
         text-align: right;
     }
@@ -283,7 +364,7 @@ body {
     .blog {
         justify-content: space-between;
         align-items: center;
-        margin: 10px 7% 10px 7%;
+        margin: 1rem 4rem 1rem 4rem;
         flex-wrap: nowrap;
         width: auto;
     }
@@ -310,8 +391,6 @@ body {
     }
 
     .logojmeno {
-        /*display: flex;
-        justify-content: center;*/
         @include flexCenter();                                   /*mixin*/
         align-items: center;
         margin-left: 7%;
@@ -334,10 +413,7 @@ body {
 @media screen and (min-width: 1200px) {
     .container {
         display: grid;
-        /*grid-template-columns: 30% 1fr;
-        grid-template-rows: auto 300px 300px 150px 100px;*/
         @include grid();                                        /* mixin s argumenty*/
-
         grid-template-areas: 
             "uvod uvod"
             "hlavicka omne"
@@ -383,7 +459,7 @@ body {
 
     .blog {
         flex-wrap: wrap;
-        margin: 0 7% 20px 7%;
+        margin: 0 4rem 2rem 4rem;
         justify-content: center;
         align-items: center;
     }
@@ -410,10 +486,7 @@ body {
 
 @media screen and (min-width: 1500px) {
     .container {
-        /*grid-template-columns: 35% 1fr;
-        grid-template-rows: repeat(5, minmax(100px, auto));*/
         @include grid(35% 1fr, repeat(5, minmax(100px, auto)));                /*mixin s argumenty*/
-        
         grid-template-areas: 
             "hlavicka uvod"
             "hlavicka omne"
@@ -428,7 +501,7 @@ body {
         font-size: 100px;
         margin: 60px 10px 0 10px;
     }
-    .hlavicka__logo {
+    #hlavicka__logo {
         width: 500px;
     }
 
