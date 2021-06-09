@@ -14,11 +14,38 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   /*mixin*/
-  /*display: flex;*/
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  /*justify-content: center;*/
   margin: 5%;
+}
+
+/***************animace loga*************************/
+svg {
+  cursor: pointer;
+}
+
+#hlavicka_logo:hover {
+  -webkit-animation: squeeze .2s ease forwards;
+          animation: squeeze .2s ease forwards;
+}
+
+#logo-circle {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@-webkit-keyframes squeeze {
+  to {
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+  }
+}
+
+@keyframes squeeze {
+  to {
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+  }
 }
 
 .paticka__logo {
@@ -55,6 +82,49 @@ body {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/hv_web.jpg");
   background-position: center;
   background-size: cover;
+  position: relative;
+}
+
+#sun {
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  left: 70%;
+  top: 2%;
+}
+
+#sun-ellipse {
+  -webkit-transition: all ease 2s;
+  transition: all ease 2s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+:hover #sun-ellipse {
+  stroke-width: 2;
+  stroke-dasharray: 8;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  fill: yellow;
+}
+
+.sun-face {
+  -webkit-transition: all ease 2s;
+  transition: all ease 2s;
+}
+
+:hover .sun-face {
+  stroke: blue;
+}
+
+.sun-paprsek {
+  -webkit-transition: all ease 4s;
+  transition: all ease 4s;
+}
+
+:hover .sun-paprsek {
+  stroke: yellow;
+  stroke-width: 5;
 }
 
 .uvod__text {
@@ -82,7 +152,7 @@ body {
 
 .neco-o-mne__nadpis {
   text-align: left;
-  padding: 0 7%;
+  padding: 0 2% 0 7%;
 }
 
 .neco-o-mne__nadpis--barva {
@@ -97,7 +167,7 @@ body {
 
 .neco-o-mne__text {
   text-align: left;
-  padding: 0 7%;
+  padding: 0 2% 0 7%;
 }
 
 .kontakt {
@@ -109,12 +179,23 @@ body {
 
 .kontakt__nadpis {
   color: #e2932b;
-  padding: 0 7%;
+  padding: 0 2% 0 7%;
   text-align: left;
 }
 
+.svg-icon {
+  stroke: white;
+  width: 30px;
+}
+
+.kontakt-nadpisicon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .kontakt__udaje {
-  padding: 0 7%;
+  padding: 0 2% 0 7%;
   color: #ffffff;
   line-height: 2;
 }
@@ -131,8 +212,6 @@ body {
   width: 100%;
   text-align: center;
   background-color: white;
-  /*display: flex;
-    justify-content: center;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,7 +234,7 @@ body {
 }
 
 .blog__nadpis {
-  padding: 0 7%;
+  padding: 0 2% 0 7%;
   text-align: left;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -223,7 +302,7 @@ body {
   .neco-o-mne__foto {
     width: auto;
     max-height: 9rem;
-    margin: 0 1rem 10px 7%;
+    margin: 0 1rem 1rem 4rem;
     float: left;
   }
   .blog {
@@ -257,7 +336,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .hlavicka__logo {
+  #hlavicka__logo {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
@@ -273,6 +352,13 @@ body {
     left: 45%;
     width: 40%;
   }
+  #sun {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    left: 85%;
+    top: 5%;
+  }
   .kontakt__udaje {
     text-align: right;
   }
@@ -283,7 +369,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 10px 7% 10px 7%;
+    margin: 1rem 4rem 1rem 4rem;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     width: auto;
@@ -318,8 +404,6 @@ body {
             align-items: center;
   }
   .logojmeno {
-    /*display: flex;
-        justify-content: center;*/
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -346,8 +430,6 @@ body {
   .container {
     display: -ms-grid;
     display: grid;
-    /*grid-template-columns: 30% 1fr;
-        grid-template-rows: auto 300px 300px 150px 100px;*/
     -ms-grid-columns: 30% 1fr;
         grid-template-columns: 30% 1fr;
     -ms-grid-rows: auto 300px 300px 150px 100px;
@@ -423,7 +505,7 @@ body {
   .blog {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 0 7% 20px 7%;
+    margin: 0 4rem 2rem 4rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -451,8 +533,6 @@ body {
 
 @media screen and (min-width: 1500px) {
   .container {
-    /*grid-template-columns: 35% 1fr;
-        grid-template-rows: repeat(5, minmax(100px, auto));*/
     -ms-grid-columns: 35% 1fr;
         grid-template-columns: 35% 1fr;
     -ms-grid-rows: (minmax(100px, auto))[5];
@@ -464,7 +544,7 @@ body {
     font-size: 100px;
     margin: 60px 10px 0 10px;
   }
-  .hlavicka__logo {
+  #hlavicka__logo {
     width: 500px;
   }
   .neco-o-mne {
