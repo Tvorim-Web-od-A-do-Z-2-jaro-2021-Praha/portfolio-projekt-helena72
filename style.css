@@ -48,6 +48,7 @@ svg {
   }
 }
 
+/********************************************************/
 .paticka__logo {
   display: none;
 }
@@ -186,6 +187,7 @@ svg {
 .svg-icon {
   stroke: white;
   width: 30px;
+  margin: 2px;
 }
 
 .kontakt-nadpisicon {
@@ -391,7 +393,6 @@ svg {
             flex: 1 0 20%;
   }
   .paticka {
-    width: auto;
     text-align: right;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -565,6 +566,7 @@ svg {
   }
   .paticka {
     font-size: 20px;
+    height: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */
